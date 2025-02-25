@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img class="avatar" src="tugas14.jpg" alt="Avatar">
+        <div class="card__information">
+            <!-- Informasi Card -->
+            <h1 id="name">Rizky</h1>
+            <p>Student at <a href="#">Sintesa</a></p>
+            <div class="skills">
+                <p>About Me:</p>
+                <div>
+                    <div class="skill">Game Enthusiast</div>
+                    <div class="skill">nun</div>
+                    <div class="skill">nun</div>
+                </div>
+            </div>
+            <div class="actions">
+                <a href="#" class="button cta">Book a lecture</a>
+                <a href="#" class="button button--secondary" onclick="learnMore()">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function learnMore() {
+            let nameElement = document.getElementById("name").innerText;
+            alert("Mari kita belajar bersama, " + nameElement);
+        }
+    </script>
+</body>
+</html>
